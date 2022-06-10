@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import pokemon from './Assets/animated/1.gif';
+import pokemonList from "./GetAllPokemon";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <img src={pokemon}></img>
+        {pokemonList()}
         <a
           className="App-link"
           href="https://reactjs.org"
